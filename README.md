@@ -1,7 +1,7 @@
 tupac.js
 ========
 
-A JavaScript implementation of 2pac time (seconds since Tupac).
+A JavaScript implementation of [2pac time](http://secondssincetupac.com) (seconds since Tupac).
 
 Usage
 -----
@@ -25,5 +25,6 @@ t.toString();
 
 Related
 -------
+- https://github.com/tupactime/secondssincetupac.com
+- https://github.com/tupactime/tupac.rb
 - http://secondssincetupac.com
-- https://github.com/oakstudios/secondssincetupac.com
