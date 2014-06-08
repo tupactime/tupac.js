@@ -1,11 +1,19 @@
-var Tupac = Date.extend({
-  offset: 842655780
-});
+var Tupac = function(i) {
+	
+  offset = 842655780;
+  date = new Date();
+ 
+  date.setTupac = function(i) {
+    this.setTime((i + offset) * 1000);
+	return this.getTupac();
+  }
 
-Tupac.prototype.setTupac = function(i) {
-  this.setTime((i + Tupac.offset) * 1000);   
-}
+  date.getTupac = function() {
+    return Math.floor(this.getTime()/1000) - offset;
+  }
 
-Tupac.prototype.getTupac = function() {
-  return Math.floor(this.getTime()/1000) - Tupac.offset;
-}
+  if (i != null) date.setTupac(i);
+
+  return date;
+
+};
